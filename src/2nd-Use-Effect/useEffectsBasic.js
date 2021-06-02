@@ -6,7 +6,7 @@ const UseEffectsBasic = () => {
     if (value >= 2) {
       document.title = `New Message(${value})`;
     }
-  });
+  }, [value]);
   return (
     <div>
       <h1>UseEffect Basic</h1>
