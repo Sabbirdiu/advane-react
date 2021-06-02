@@ -4,7 +4,8 @@ import React from "react";
 // import UseStateObject from "./hooks/UseStateObject";
 
 // import SimpleCounter from "./hooks/SimpleCounter";
-import UseEffectsBasic from "./2nd-Use-Effect/useEffectsBasic";
+// import UseEffectsBasic from "./2nd-Use-Effect/useEffectsBasic";
+import UseEffectsFetchApi from "./2nd-Use-Effect/UseEffectsFetchApi";
 function App() {
   return (
     <div className="container">
@@ -12,7 +13,8 @@ function App() {
       {/* <ArrayExample /> */}
       {/* <UseStateObject /> */}
       {/* <SimpleCounter /> */}
-      <UseEffectsBasic />
+      {/* <UseEffectsBasic /> */}
+      <UseEffectsFetchApi />
     </div>
   );
 }
