@@ -3,7 +3,9 @@ import React, { useState, useEffect } from "react";
 const UseEffectsBasic = () => {
   const [value, setValue] = useState(0);
   useEffect(() => {
-    document.title = `New Message(${value})`;
+    if (value >= 2) {
+      document.title = `New Message(${value})`;
+    }
   });
   return (
     <div>
