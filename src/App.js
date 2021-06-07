@@ -5,7 +5,8 @@ import React from "react";
 
 // import SimpleCounter from "./hooks/SimpleCounter";
 // import UseEffectsBasic from "./2nd-Use-Effect/useEffectsBasic";
-import UseEffectsFetchApi from "./2nd-Use-Effect/UseEffectsFetchApi";
+// import UseEffectsFetchApi from "./2nd-Use-Effect/UseEffectsFetchApi";
+import ControlledInputs from "./form/ControlledInputs";
 function App() {
   return (
     <div className="container">
@@ -14,7 +15,8 @@ function App() {
       {/* <UseStateObject /> */}
       {/* <SimpleCounter /> */}
       {/* <UseEffectsBasic /> */}
-      <UseEffectsFetchApi />
+      {/* <UseEffectsFetchApi /> */}
+      <ControlledInputs />
     </div>
   );
 }
