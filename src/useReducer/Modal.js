@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const modal = ({ modalContent }) => {
+const Modal = ({ modalContent, closeModal }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      closeModal();
+    }, 4000);
+  });
   return (
     <div className="modal">
       <p>{modalContent}</p>
@@ -8,4 +13,4 @@ const modal = ({ modalContent }) => {
   );
 };
 
-export default modal;
+export default Modal;
