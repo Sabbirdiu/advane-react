@@ -6,7 +6,8 @@ import React from "react";
 // import SimpleCounter from "./hooks/SimpleCounter";
 // import UseEffectsBasic from "./2nd-Use-Effect/useEffectsBasic";
 // import UseEffectsFetchApi from "./2nd-Use-Effect/UseEffectsFetchApi";
-import ControlledInputs from "./form/ControlledInputs";
+// import ControlledInputs from "./form/ControlledInputs";
+import MultipleInput from "./form/MultipleInput";
 function App() {
   return (
     <div className="container">
@@ -16,7 +17,8 @@ function App() {
       {/* <SimpleCounter /> */}
       {/* <UseEffectsBasic /> */}
       {/* <UseEffectsFetchApi /> */}
-      <ControlledInputs />
+      {/* <ControlledInputs /> */}
+      <MultipleInput />
     </div>
   );
 }

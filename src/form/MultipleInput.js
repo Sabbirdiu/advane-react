@@ -1,29 +1,25 @@
 import React, { useState } from "react";
 
-const ControlledInputs = () => {
-  const [firstName, setfirstName] = useState("");
-  const [email, setEmail] = useState("");
-  const [age, setAge] = useState("");
+const MultipleInput = () => {
+  //   const [firstName, setfirstName] = useState("");
+  //   const [email, setEmail] = useState("");
+  //   const [age, setAge] = useState("");
+  const [person, setPerson] = useState({ firstName: "", email: "", age: "" });
   const [people, setPeople] = useState([]);
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setPerson({ ...person, [name]: value });
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (firstName && email && age) {
-      const person = {
-        id: new Date().getTime().toString(),
-        firstName,
-        email,
-        age,
-      };
-      setPeople((peopleAdd) => {
-        return [...peopleAdd, person];
-      });
-      setfirstName("");
-      setEmail("");
-      setAge("");
+    if (person.firstName && person.email && person.age) {
+      const newPerson = { ...person, id: new Date().getTime().toString() };
+      setPeople([...people, newPerson]);
+      setPerson({ firstName: "", email: "", age: "" });
     } else {
       console.log("empty value");
     }
-    console.log(firstName, email, age);
   };
   return (
     <>
@@ -35,8 +31,8 @@ const ControlledInputs = () => {
               type="text"
               id="firstName"
               name="firstName"
-              value={firstName}
-              onChange={(e) => setfirstName(e.target.value)}
+              value={person.firstName}
+              onChange={handleChange}
             />
           </div>
           <div className="form-control">
@@ -45,8 +41,8 @@ const ControlledInputs = () => {
               type="text"
               id="email"
               name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={person.email}
+              onChange={handleChange}
             />
           </div>
           <div className="form-control">
@@ -55,8 +51,8 @@ const ControlledInputs = () => {
               type="text"
               id="age"
               name="age"
-              value={age}
-              onChange={(e) => setAge(e.target.value)}
+              value={person.age}
+              onChange={handleChange}
             />
           </div>
           <button type="submit">Add person</button>
@@ -76,4 +72,4 @@ const ControlledInputs = () => {
   );
 };
 
-export default ControlledInputs;
+export default MultipleInput;
