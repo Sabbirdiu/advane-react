@@ -8,7 +8,8 @@ import React from "react";
 // import UseEffectsFetchApi from "./2nd-Use-Effect/UseEffectsFetchApi";
 // import ControlledInputs from "./form/ControlledInputs";
 // import MultipleInput from "./form/MultipleInput";
-import Index from "./useReducer/Index";
+// import Index from "./useReducer/Index";
+import PropDrilling from "./prop-drilling/PropDrilling";
 function App() {
   return (
     <div className="container">
@@ -20,7 +21,8 @@ function App() {
       {/* <UseEffectsFetchApi /> */}
       {/* <ControlledInputs /> */}
       {/* <MultipleInput /> */}
-      <Index />
+      {/* <Index /> */}
+      <PropDrilling />
     </div>
   );
 }
