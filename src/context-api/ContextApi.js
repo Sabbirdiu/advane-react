@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { data } from "../data";
-const PersonContext = createContext();
+const PersonContext = React.createContext();
 const ContextApi = () => {
   const [people, setPeople] = useState(data);
   const removeItem = (id) => {
@@ -22,7 +22,7 @@ const List = () => {
   return (
     <>
       {mainData.people.map((person) => {
-        return <SinglePerson key={person.id} />;
+        return <SinglePerson key={person.id} {...person} />;
       })}
     </>
   );

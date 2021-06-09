@@ -9,7 +9,8 @@ import React from "react";
 // import ControlledInputs from "./form/ControlledInputs";
 // import MultipleInput from "./form/MultipleInput";
 // import Index from "./useReducer/Index";
-import PropDrilling from "./prop-drilling/PropDrilling";
+// import PropDrilling from "./prop-drilling/PropDrilling";
+import ContextApi from "./context-api/ContextApi";
 function App() {
   return (
     <div className="container">
@@ -22,7 +23,8 @@ function App() {
       {/* <ControlledInputs /> */}
       {/* <MultipleInput /> */}
       {/* <Index /> */}
-      <PropDrilling />
+      {/* <PropDrilling /> */}
+      <ContextApi />
     </div>
   );
 }
