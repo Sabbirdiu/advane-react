@@ -11,7 +11,8 @@ import React from "react";
 // import Index from "./useReducer/Index";
 // import PropDrilling from "./prop-drilling/PropDrilling";
 // import ContextApi from "./context-api/ContextApi";
-import Example from "./cutom-hooks/FetchExample";
+// import Example from "./cutom-hooks/FetchExample";
+import Index from "./prop-types/Index";
 function App() {
   return (
     <div className="container">
@@ -26,7 +27,8 @@ function App() {
       {/* <Index /> */}
       {/* <PropDrilling /> */}
       {/* <ContextApi /> */}
-      <Example />
+      {/* <Example /> */}
+      <Index/>
     </div>
   );
 }
